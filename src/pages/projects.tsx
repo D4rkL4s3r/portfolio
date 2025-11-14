@@ -10,7 +10,16 @@ type Project = {
 	link: string;
 };
 
-const projects: Project[] = [];
+const projects: Project[] = [
+	{
+		icon: "💼",
+		title: "Portfolio",
+		description:
+			"This is my portfolio website, it's built with React and Tailwind CSS.",
+		tags: ["web", "portfolio", "react", "tailwind"],
+		link: "https://github.com/D4rkL4s3r/portfolio",
+	},
+];
 
 export default function ProjectsPage() {
 	return (
