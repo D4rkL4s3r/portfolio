@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { FileDown, Github, Linkedin, Mail } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -38,9 +38,9 @@ export default function ProfileCard() {
 
 				<div className="flex flex-col gap-3 mb-6">
 					<div className="flex items-center gap-3 text-muted-foreground">
-						<span className="text-xl">🎂</span>
+						<span className="text-xl">📅</span>
 						<span style={{ fontFamily: "Courier New, monospace" }}>
-							{t("profile.age")}
+							{t("profile.availability")}
 						</span>
 					</div>
 					<div className="flex items-center gap-3 text-muted-foreground">
@@ -73,6 +73,17 @@ export default function ProfileCard() {
 				</div>
 
 				<div className="flex flex-wrap gap-2">
+					<Button variant="outline" size="sm" asChild>
+						<a
+							href={`${import.meta.env.BASE_URL}CV_Maxim_Francois.pdf`}
+							target="_blank"
+							rel="noopener noreferrer"
+							style={{ fontFamily: "Courier New, monospace" }}
+						>
+							<FileDown className="w-4 h-4 mr-2" />
+							{t("profile.buttons.downloadCv")}
+						</a>
+					</Button>
 					<Button variant="outline" size="sm" asChild>
 						<a
 							href="https://github.com/D4rkL4s3r"

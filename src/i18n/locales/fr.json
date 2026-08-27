@@ -5,7 +5,7 @@
 	},
 	"profile": {
 		"handle": "@d4rkl4s3r • il/lui",
-		"age": "Adulte",
+		"availability": "Disponible dès juillet 2026",
 		"location": "Belgique, Europe",
 		"languages": "FR (natif) · EN B2 · NL A2",
 		"aboutLabel": "À PROPOS",
@@ -13,7 +13,8 @@
 		"buttons": {
 			"github": "GitHub",
 			"linkedin": "LinkedIn",
-			"email": "Email"
+			"email": "Email",
+			"downloadCv": "Télécharger le CV"
 		}
 	},
 	"experience": {
