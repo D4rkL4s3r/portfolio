@@ -1,0 +1,132 @@
+{
+	"nav": {
+		"home": "/home/me",
+		"projects": "/bin/projects"
+	},
+	"profile": {
+		"handle": "@d4rkl4s3r • he/him",
+		"age": "Adult",
+		"location": "Belgium, Europe",
+		"languages": "FR (native) · EN B2 · NL A2",
+		"aboutLabel": "ABOUT",
+		"about": "Passionate web developer, graduated with a Master's in Networks & Software Engineering from UCLouvain (2026). With hands-on experience at Pluriell, I'm skilled in fullstack development and Agile workflows. Curious, rigorous, and always looking to grow.",
+		"buttons": {
+			"github": "GitHub",
+			"linkedin": "LinkedIn",
+			"email": "Email"
+		}
+	},
+	"experience": {
+		"heading": "$ cat ~/experience.log",
+		"items": [
+			{
+				"role": "Web Developer",
+				"company": "Pluriell (MilientSoftware Group)",
+				"period": "July 2025 – June 2026 (1 year)",
+				"location": "Belgium",
+				"bullets": [
+					"Development and maintenance of full-stack web applications.",
+					"Design and integration of new features.",
+					"Participation in Agile/Scrum sprints and code reviews."
+				]
+			},
+			{
+				"role": "Internship – Web Developer",
+				"company": "Pluriell",
+				"period": "July 2024 – September 2024 (3 months)",
+				"location": "Belgium",
+				"bullets": [
+					"Development of a web application from scratch.",
+					"Onboarding onto the company's professional workflow and tools."
+				]
+			},
+			{
+				"role": "Web Developer",
+				"company": "Ludomotique",
+				"period": "February 2024 – March 2024",
+				"location": "Belgium",
+				"bullets": [
+					"Development of a web interface for visualizing sensor data."
+				]
+			},
+			{
+				"role": "Tutor, Ambassador & Delegate",
+				"company": "UCLouvain",
+				"period": "September 2020 – June 2023",
+				"location": "Louvain-la-Neuve",
+				"bullets": [
+					"Academic mentoring of first-year Bachelor's students.",
+					"Welcoming visitors during open days and liaising with the administration."
+				]
+			},
+			{
+				"role": "Participant",
+				"company": "Hackathon UCLouvain",
+				"period": "April 17–19, 2023",
+				"location": "Namur",
+				"bullets": [
+					"Development of a mobile app for visually impaired people, as part of a team under time pressure."
+				]
+			}
+		]
+	},
+	"education": {
+		"heading": "$ cat ~/education.log",
+		"items": [
+			{
+				"degree": "Master's – Networks & Software Engineering",
+				"school": "UCLouvain",
+				"period": "September 2024 – June 2026"
+			},
+			{
+				"degree": "Thesis – Design and Implementation of a Modular Web Platform for Whole-Slide Image Analysis Integrating the DICOM Standard",
+				"school": "UCLouvain",
+				"period": "June 2026",
+				"bullets": [
+					"Design of a modular, collaborative web platform for high-resolution histological image analysis (whole-slide imaging), integrating the DICOM standard."
+				]
+			},
+			{
+				"degree": "Bachelor's – Computer Science, Health & Life Sciences track",
+				"school": "UCLouvain",
+				"period": "September 2020 – August 2023"
+			}
+		]
+	},
+	"skills": {
+		"heading": "$ cat ~/skills.json",
+		"groups": [
+			{
+				"label": "Programming Languages",
+				"skills": ["Java", "Python", "C", "JavaScript", "TypeScript", "PHP", "SQL", "HTML/CSS", "Rust", "Flutter", "C#"]
+			},
+			{
+				"label": "Web & Frameworks",
+				"skills": ["React", "Node.js", "Vue", "Nest.js", "Next.js"]
+			},
+			{
+				"label": "Tools & DevOps",
+				"skills": ["Git", "GitHub", "GitLab", "JetBrains IDE", "WAMP / LAMP", "Scrum / Agile", "Raspberry Pi", "ESP-32"]
+			},
+			{
+				"label": "Spoken Languages",
+				"skills": ["French (native)", "English B2", "Dutch A2"]
+			}
+		]
+	},
+	"projects": {
+		"heading": "My projects",
+		"empty": "Available soon",
+		"viewProject": "→ View project",
+		"items": {
+			"portfolio": {
+				"title": "Portfolio",
+				"description": "This is my portfolio website, built with React and Tailwind CSS."
+			},
+			"mvp": {
+				"title": "mvp",
+				"description": "A smart mv replacement that shows progress bars, supports previews, and intelligently handles cross-filesystem moves."
+			}
+		}
+	}
+}

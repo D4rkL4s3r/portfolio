@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Badge } from "@/components/ui/badge";
 import {
 	Card,
@@ -22,6 +23,8 @@ export default function ProjectCard({
 	tags,
 	link,
 }: ProjectCardProps) {
+	const { t } = useTranslation();
+
 	return (
 		<a href={link} target="_blank" rel="noopener noreferrer">
 			<Card className="h-full border-border/50 hover:border-accent transition-all duration-300 hover:-translate-y-2 cursor-pointer">
@@ -57,7 +60,7 @@ export default function ProjectCard({
 
 					<div className="flex items-center justify-center gap-1 text-accent text-sm hover:opacity-70 transition-opacity">
 						<span style={{ fontFamily: "Courier New, monospace" }}>
-							→ Voir le projet
+							{t("projects.viewProject")}
 						</span>
 					</div>
 				</CardContent>

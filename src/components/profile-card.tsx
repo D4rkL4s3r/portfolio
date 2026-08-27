@@ -1,10 +1,13 @@
-import { Github } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function ProfileCard() {
+	const { t } = useTranslation();
+
 	return (
-		<Card className="w-full max-w-2xl overflow-hidden border-border/50 shadow-2xl">
+		<Card className="w-full overflow-hidden border-border/50 shadow-2xl">
 			<div className="h-40 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500" />
 
 			<div className="relative px-6 -mt-16">
@@ -23,30 +26,34 @@ export default function ProfileCard() {
 						className="text-3xl font-bold text-primary mb-1"
 						style={{ fontFamily: "Courier New, monospace" }}
 					>
-						D4rkL4s3r
+						Maxim François
 					</h1>
 					<p
 						className="text-muted-foreground"
 						style={{ fontFamily: "Courier New, monospace" }}
 					>
-						@d4rkl4s3r • he/him
+						{t("profile.handle")}
 					</p>
 				</div>
 
 				<div className="flex flex-col gap-3 mb-6">
 					<div className="flex items-center gap-3 text-muted-foreground">
 						<span className="text-xl">🎂</span>
-						<span style={{ fontFamily: "Courier New, monospace" }}>Adulte</span>
+						<span style={{ fontFamily: "Courier New, monospace" }}>
+							{t("profile.age")}
+						</span>
 					</div>
 					<div className="flex items-center gap-3 text-muted-foreground">
 						<span className="text-xl">📍</span>
 						<span style={{ fontFamily: "Courier New, monospace" }}>
-							Belgium, Europe
+							{t("profile.location")}
 						</span>
 					</div>
 					<div className="flex items-center gap-3 text-muted-foreground">
 						<span className="text-xl">🗣️</span>
-						<span style={{ fontFamily: "Courier New, monospace" }}>FR/EN</span>
+						<span style={{ fontFamily: "Courier New, monospace" }}>
+							{t("profile.languages")}
+						</span>
 					</div>
 				</div>
 
@@ -55,15 +62,13 @@ export default function ProfileCard() {
 						className="text-xs uppercase tracking-wider text-muted-foreground mb-2"
 						style={{ fontFamily: "Courier New, monospace" }}
 					>
-						ABOUT
+						{t("profile.aboutLabel")}
 					</p>
 					<p
 						className="text-sm leading-relaxed"
 						style={{ fontFamily: "Courier New, monospace" }}
 					>
-						Full-stack web developer passionate about modern technologies. I
-						create high-performance and intuitive web applications. Always
-						learning continuously and open to new challenges.
+						{t("profile.about")}
 					</p>
 				</div>
 
@@ -76,30 +81,30 @@ export default function ProfileCard() {
 							style={{ fontFamily: "Courier New, monospace" }}
 						>
 							<Github className="w-4 h-4 mr-2" />
-							GitHub
+							{t("profile.buttons.github")}
 						</a>
 					</Button>
-					{/* <Button variant="outline" size="sm" asChild>
+					<Button variant="outline" size="sm" asChild>
 						<a
-							href="https://linkedin.com/in/votre-profil"
+							href="https://linkedin.com/in/maxim-françois-44a4802a1"
 							target="_blank"
 							rel="noopener noreferrer"
 							style={{ fontFamily: "Courier New, monospace" }}
 						>
 							<Linkedin className="w-4 h-4 mr-2" />
-							LinkedIn
-						</a>
-					</Button> */}
-					{/* <Button variant="outline" size="sm" asChild>
-						<a
-							href="mailto:votre.email@example.com"
-							style={{ fontFamily: "Courier New, monospace" }}
-						>
-							<Mail className="w-4 h-4 mr-2" />
-							Email
+							{t("profile.buttons.linkedin")}
 						</a>
 					</Button>
 					<Button variant="outline" size="sm" asChild>
+						<a
+							href="mailto:maximusfr444@gmail.com"
+							style={{ fontFamily: "Courier New, monospace" }}
+						>
+							<Mail className="w-4 h-4 mr-2" />
+							{t("profile.buttons.email")}
+						</a>
+					</Button>
+					{/* <Button variant="outline" size="sm" asChild>
 						<a
 							href="https://discord.com/users/votreID"
 							target="_blank"

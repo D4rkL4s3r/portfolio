@@ -1,27 +1,33 @@
+import { useTranslation } from "react-i18next";
 import Footer from "@/components/footer";
 import Navigation from "@/components/navigation";
 import ProjectCard from "@/components/project-card";
 
-type Project = {
+type ProjectMeta = {
+	key: string;
 	icon: string;
-	title: string;
-	description: string;
 	tags: string[];
 	link: string;
 };
 
-const projects: Project[] = [
+const projectsMeta: ProjectMeta[] = [
 	{
+		key: "portfolio",
 		icon: "💼",
-		title: "Portfolio",
-		description:
-			"This is my portfolio website, it's built with React and Tailwind CSS.",
 		tags: ["web", "portfolio", "react", "tailwind"],
 		link: "https://github.com/D4rkL4s3r/portfolio",
+	},
+	{
+		key: "mvp",
+		icon: "📦",
+		tags: ["bash", "cli", "linux", "tool"],
+		link: "https://github.com/D4rkL4s3r/mvp",
 	},
 ];
 
 export default function ProjectsPage() {
+	const { t } = useTranslation();
+
 	return (
 		<div className="min-h-screen flex flex-col dark">
 			{/* <CursorGlow /> */}
@@ -32,20 +38,27 @@ export default function ProjectsPage() {
 					className="text-4xl font-bold mb-3"
 					style={{ fontFamily: "Courier New, monospace" }}
 				>
-					My projects
+					{t("projects.heading")}
 				</h1>
 			</div>
 
 			<main className="flex-1 max-w-6xl w-full mx-auto px-6 pb-12">
-				{Array.isArray(projects) && projects.length > 0 ? (
+				{projectsMeta.length > 0 ? (
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-						{projects.map((project) => (
-							<ProjectCard key={project.title} {...project} />
+						{projectsMeta.map((project) => (
+							<ProjectCard
+								key={project.key}
+								icon={project.icon}
+								title={t(`projects.items.${project.key}.title`)}
+								description={t(`projects.items.${project.key}.description`)}
+								tags={project.tags}
+								link={project.link}
+							/>
 						))}
 					</div>
 				) : (
 					<div className="text-center text-muted-foreground py-16">
-						Available soon
+						{t("projects.empty")}
 					</div>
 				)}
 			</main>

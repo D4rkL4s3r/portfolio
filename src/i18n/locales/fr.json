@@ -1,0 +1,132 @@
+{
+	"nav": {
+		"home": "/home/me",
+		"projects": "/bin/projects"
+	},
+	"profile": {
+		"handle": "@d4rkl4s3r • il/lui",
+		"age": "Adulte",
+		"location": "Belgique, Europe",
+		"languages": "FR (natif) · EN B2 · NL A2",
+		"aboutLabel": "À PROPOS",
+		"about": "Développeur web passionné, diplômé d'un Master en Réseaux & Software Engineering à l'UCLouvain (2026). Fort d'une expérience concrète chez Pluriell, je maîtrise le développement fullstack et les cycles Agile. Curieux, rigoureux et toujours en quête de progression.",
+		"buttons": {
+			"github": "GitHub",
+			"linkedin": "LinkedIn",
+			"email": "Email"
+		}
+	},
+	"experience": {
+		"heading": "$ cat ~/experience.log",
+		"items": [
+			{
+				"role": "Développeur Web",
+				"company": "Pluriell (MilientSoftware Group)",
+				"period": "Juillet 2025 – Juin 2026 (1 an)",
+				"location": "Belgique",
+				"bullets": [
+					"Développement et maintenance d'applications web full-stack.",
+					"Conception et intégration de nouvelles fonctionnalités.",
+					"Participation aux sprints Agile/Scrum et revues de code."
+				]
+			},
+			{
+				"role": "Stage – Développeur Web",
+				"company": "Pluriell",
+				"period": "Juillet 2024 – Septembre 2024 (3 mois)",
+				"location": "Belgique",
+				"bullets": [
+					"Développement d'une application web from scratch.",
+					"Prise en main du workflow professionnel et des outils de l'entreprise."
+				]
+			},
+			{
+				"role": "Développeur Web",
+				"company": "Ludomotique",
+				"period": "Février 2024 – Mars 2024",
+				"location": "Belgique",
+				"bullets": [
+					"Développement d'une interface web de visualisation de données capteurs."
+				]
+			},
+			{
+				"role": "Tuteur, Ambassadeur & Délégué",
+				"company": "UCLouvain",
+				"period": "Septembre 2020 – Juin 2023",
+				"location": "Louvain-la-Neuve",
+				"bullets": [
+					"Encadrement pédagogique des étudiants de Bachelier 1.",
+					"Accueil lors des journées portes ouvertes et liaison avec la direction."
+				]
+			},
+			{
+				"role": "Participant",
+				"company": "Hackathon UCLouvain",
+				"period": "17 – 19 avril 2023",
+				"location": "Namur",
+				"bullets": [
+					"Développement d'une app mobile pour personnes malvoyantes en équipe sous contrainte de temps."
+				]
+			}
+		]
+	},
+	"education": {
+		"heading": "$ cat ~/education.log",
+		"items": [
+			{
+				"degree": "Master – Réseaux & Software Engineering",
+				"school": "UCLouvain",
+				"period": "Septembre 2024 – Juin 2026"
+			},
+			{
+				"degree": "TFE – Design and Implementation of a Modular Web Platform for Whole-Slide Image Analysis Integrating the DICOM Standard",
+				"school": "UCLouvain",
+				"period": "Juin 2026",
+				"bullets": [
+					"Conception d'une plateforme web modulaire et collaborative pour l'analyse d'images histologiques haute résolution (whole-slide imaging), intégrant le standard DICOM."
+				]
+			},
+			{
+				"degree": "Bachelier – Informatique, orientation Santé & Sciences du Vivant",
+				"school": "UCLouvain",
+				"period": "Septembre 2020 – Août 2023"
+			}
+		]
+	},
+	"skills": {
+		"heading": "$ cat ~/skills.json",
+		"groups": [
+			{
+				"label": "Langages",
+				"skills": ["Java", "Python", "C", "JavaScript", "TypeScript", "PHP", "SQL", "HTML/CSS", "Rust", "Flutter", "C#"]
+			},
+			{
+				"label": "Web & Frameworks",
+				"skills": ["React", "Node.js", "Vue", "Nest.js", "Next.js"]
+			},
+			{
+				"label": "Outils & DevOps",
+				"skills": ["Git", "GitHub", "GitLab", "JetBrains IDE", "WAMP / LAMP", "Scrum / Agile", "Raspberry Pi", "ESP-32"]
+			},
+			{
+				"label": "Langues",
+				"skills": ["Français (natif)", "Anglais B2", "Néerlandais A2"]
+			}
+		]
+	},
+	"projects": {
+		"heading": "Mes projets",
+		"empty": "Disponible bientôt",
+		"viewProject": "→ Voir le projet",
+		"items": {
+			"portfolio": {
+				"title": "Portfolio",
+				"description": "Voici mon site portfolio, construit avec React et Tailwind CSS."
+			},
+			"mvp": {
+				"title": "mvp",
+				"description": "Un remplaçant intelligent de mv : barres de progression, mode aperçu et gestion optimisée des déplacements entre systèmes de fichiers."
+			}
+		}
+	}
+}
