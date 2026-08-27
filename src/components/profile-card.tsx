@@ -75,7 +75,7 @@ export default function ProfileCard() {
 				<div className="flex flex-wrap gap-2">
 					<Button variant="outline" size="sm" asChild>
 						<a
-							href={`${import.meta.env.BASE_URL}CV_Maxim_Francois.pdf`}
+							href={`${import.meta.env.BASE_URL}CV_19-08-2026-github.pdf`}
 							target="_blank"
 							rel="noopener noreferrer"
 							style={{ fontFamily: "Courier New, monospace" }}
