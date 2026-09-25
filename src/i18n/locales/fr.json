@@ -127,6 +127,10 @@
 			"mvp": {
 				"title": "mvp",
 				"description": "Un remplaçant intelligent de mv : barres de progression, mode aperçu et gestion optimisée des déplacements entre systèmes de fichiers."
+			},
+			"aurora": {
+				"title": "Aurora",
+				"description": "Un explorateur de fichiers Windows léger écrit en Rust avec egui : onglets, vue scindée, miniatures, raccourcis clavier et recherche rapide."
 			}
 		}
 	}

@@ -127,6 +127,10 @@
 			"mvp": {
 				"title": "mvp",
 				"description": "A smart mv replacement that shows progress bars, supports previews, and intelligently handles cross-filesystem moves."
+			},
+			"aurora": {
+				"title": "Aurora",
+				"description": "A lightweight Windows file explorer written in Rust with egui: tabs, split view, thumbnails, keyboard shortcuts and fast search."
 			}
 		}
 	}

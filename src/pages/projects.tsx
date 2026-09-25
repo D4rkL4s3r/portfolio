@@ -23,6 +23,12 @@ const projectsMeta: ProjectMeta[] = [
 		tags: ["bash", "cli", "linux", "tool"],
 		link: "https://github.com/D4rkL4s3r/mvp",
 	},
+	{
+		key: "aurora",
+		icon: "🗂️",
+		tags: ["rust", "egui", "windows", "desktop"],
+		link: "https://github.com/D4rkL4s3r/Aurora",
+	},
 ];
 
 export default function ProjectsPage() {
